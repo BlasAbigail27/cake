@@ -1,0 +1,51 @@
+[
+    {
+        "id": 1,
+        "name":"Classic Vanilla Cake",
+        "price": 200,
+        "image": "image/vclassic.jpg"
+    },
+    {
+        "id": 2,
+        "name":"Cheese Vanilla Cake",
+        "price": 250,
+        "image": "image/cheese.jpg"
+    },
+    {
+        "id": 3,
+        "name":"Cherry Vanilla Cake",
+        "price": 290,
+        "image": "image/cherry.jpg"
+    },
+    {
+        "id": 4,
+        "name":"Lemon Vanilla Cake",
+        "price": 200,
+        "image": "image/lemon.jpg"
+    },
+    {
+        "id": 5,
+        "name":"Vanilla Bean Cake",
+        "price": 300,
+        "image": "image/bean.jpg"
+    },
+    {
+        "id": 6,
+        "name":"Honey Vanilla Cake",
+        "price": 200,
+        "image": "image/honey.jpg"
+    },
+    {
+        "id": 7,
+        "name":"Choco-Glaze Vanilla Cake",
+        "price": 200,
+        "image": "image/choglaze.png"
+    },
+    {
+        "id": 8,
+        "name":"Mocha Vanilla Cake",
+        "price": 200,
+        "image": "image/mvanilla.png"
+    }
+
+]

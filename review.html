@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Website</title>
+    <link rel="stylesheet" href="review.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+    <section id="Nav">
+        <nav>
+            <div class="logo">
+                <img src="image/logo.png">
+            </div>
+
+            <ul>
+                <li><a href="loged.html">HOME</a></li>
+                <li><a href="menu.html">FLAVORS</a></li>
+                <li><a href="about.html">ABOUT US</a></li>
+                <li><a href="review.html">REVIEWS</a></li>
+                <li><a href="contacts.html">CONTACTS</a></li>
+            </ul>
+        </nav>
+    </section>
+
+    <!-- Review Section -->
+    <div class="review" id="Review">
+        <h1>Customer<span>Review</span></h1>
+
+        <div class="review_box">
+            <div class="review_card">
+                <div class="review_profile">
+                    <img src="image/josh.jpg">
+                </div>
+                <div class="review_text">
+                    <h2 class="name">Joshua Dongon</h2>
+                    <div class="review_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <p>
+                        Hi, I'm Joshua! I recently tried the cakes from this amazing website. The chocolate fudge cake was my favorite, it was so rich and moist! I loved how beautifully each cake was crafted; it made my dessert experience truly delightful.
+                    </p>
+                </div>
+            </div>
+
+            <div class="review_card">
+                <div class="review_profile">
+                    <img src="image/abby.jpeg">
+                </div>
+                <div class="review_text">
+                    <h2 class="name">Abigail Blas</h2>
+                    <div class="review_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p>
+                        Hello! I'm Abby and I recently ordered a vanilla cake from this site. It was delicious! The frosting was light and fluffy, and the cake itself was incredibly moist. I will definitely be ordering again for my next celebration!
+                    </p>
+                </div>
+            </div>
+            
+            <div class="review_card">
+                <div class="review_profile">
+                    <img src="image/Rhosley.jpg">
+                </div>
+                <div class="review_text">
+                    <h2 class="name">Rhosley Arman </h2>
+                    <div class="review_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p>
+                        Hey there! I'm Rhosley! I discovered this cake website and decided to try their red velvet cake. I was pleasantly surprised by how perfect the texture was, soft and velvety with just the right amount of sweetness. The flavor was spot on, and it quickly became a favorite among my family and friends.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="wrapper">
+		<h3>Please leave a comment</h3>
+		<form action="#">
+			<div class="rating">
+				<input type="number" name="rating" hidden>
+				<i class='bx bx-star star' style="--i: 0;"></i>
+				<i class='bx bx-star star' style="--i: 1;"></i>
+				<i class='bx bx-star star' style="--i: 2;"></i>
+				<i class='bx bx-star star' style="--i: 3;"></i>
+				<i class='bx bx-star star' style="--i: 4;"></i>
+			</div>
+			<textarea name="opinion" cols="30" rows="5" placeholder="Your opinion..."></textarea>
+			<div class="btn-group">
+                <button type="submit" class="btn submit" id="submit-btn">Submit</button>
+				<button class="btn cancel">Cancel</button>
+			</div>
+		</form>
+	</div>
+
+    <script>
+    const allStar = document.querySelectorAll('.rating .star')
+const ratingValue = document.querySelector('.rating input')
+const submitBtn = document.getElementById('submit-btn');
+
+submitBtn.addEventListener('click', function() {
+    if (confirm('Are you sure you want to submit your review?')) {
+      alert('Thank you for submitting your review!');
+    } else {
+      alert('Review submission cancelled.');
+    }
+  });
+
+allStar.forEach((item, idx)=> {
+	item.addEventListener('click', function () {
+		let click = 0
+		ratingValue.value = idx + 1
+
+		allStar.forEach(i=> {
+			i.classList.replace('bxs-star', 'bx-star')
+			i.classList.remove('active')
+		})
+		for(let i=0; i<allStar.length; i++) {
+			if(i <= idx) {
+				allStar[i].classList.replace('bx-star', 'bxs-star')
+				allStar[i].classList.add('active')
+			} else {
+				allStar[i].style.setProperty('--i', click)
+				click++
+			}
+		}
+	})
+})
+    </script>
+</body>
+</html>

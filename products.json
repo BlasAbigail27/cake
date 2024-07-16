@@ -1,0 +1,51 @@
+[
+    {
+        "id": 1,
+        "name":"Chocolate Black Out: A moist and rich chocolate cake made with plant-based ingredients, ensuring everyone can enjoy a delicious slice of chocolate heaven.",
+        "price": 200,
+        "image": "image/blackout.jpg"
+    },
+    {
+        "id": 2,
+        "name":"Chocolate Bliss: A rich and moist chocolate cake layered with creamy chocolate ganache, perfect for any chocolate lover.",
+        "price": 250,
+        "image": "image/bliss.png"
+    },
+    {
+        "id": 3,
+        "name":"Chocolate Fudge: Indulge in the decadence of this dense and luscious dark chocolate fudge cake, topped with a silky chocolate glaze.",
+        "price": 290,
+        "image": "image/fudge.jpg"
+    },
+    {
+        "id": 4,
+        "name":"Chocolate Hazelnut: A delightful combination of rich chocolate cake and tangy raspberry filling, covered in smooth chocolate truffle frosting.",
+        "price": 200,
+        "image": "image/hazelnut.jpg"
+    },
+    {
+        "id": 5,
+        "name":"Chocolate Mocha: This cake blends the intense flavors of dark chocolate and espresso, creating a sophisticated treat for coffee and chocolate enthusiasts.",
+        "price": 300,
+        "image": "image/mocha.jpg"
+    },
+    {
+        "id": 6,
+        "name":"Chocolate Truffle: A luxurious dessert featuring layers of dark, milk, and white chocolate mousse atop a moist chocolate sponge base.",
+        "price": 200,
+        "image": "image/truffle.jpg"
+    },
+    {
+        "id": 7,
+        "name":"Chocolate Oreo: A heavenly mix of chocolate and peanut butter, with layers of chocolate cake and creamy peanut butter frosting, topped with chocolate ganache.",
+        "price": 200,
+        "image": "image/oreo cake.jpg"
+    },
+    {
+        "id": 8,
+        "name":"Chocolate Mint: Refreshing mint-infused chocolate cake paired with a creamy mint frosting, finished with a drizzle of dark chocolate.",
+        "price": 200,
+        "image": "image/mint.jpg"
+    }
+
+]

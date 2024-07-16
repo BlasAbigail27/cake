@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html, body {
+    background-image: url(image/product\ bg.png);
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #C27F85;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    z-index: 1000;
+    padding: 10px 0;
+}
+
+nav .logo img {
+    width: 90px;
+    cursor: pointer;
+    position: relative;
+    right: 3rem;
+}
+
+nav ul {
+    list-style: none;
+    
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 25px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    font-size: 20px;
+    transition: 0.1s;
+    position: relative;
+    right: 15rem;
+}
+
+nav ul li a::after {
+    content: '';
+    width: 0;
+    height: 2px;
+    background: black;
+    display: block;
+    transition: 0.2s linear;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+nav ul li a:hover {
+    color: black;
+}
+
+nav .icon i {
+    font-size: 18px;
+    color: white;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+nav .icon i:hover {
+    color: black;
+}
+nav {
+    padding: 7px;
+}
+
+
+
+.options {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 1.5rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 8rem;
+    display: grid;
+    position: relative;
+    top: 20px;
+    right: 300px;
+    opacity: 1;
+    
+}
+
+.options label {
+    font-size: larger;
+    font-weight: bold;
+}
+
+.options option  {
+    font-size: larger;
+    font-weight: bold;
+}
+
+.options h2 {
+    font-size: xx-large;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #ffffff;
+}
+
+.options input,
+.options select{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: larger;
+}
+
+
+
+.radio{
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 1.5rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 2rem; 
+    display: flex; 
+    flex-direction: column;
+    display: grid;
+    position: relative;
+    top: -55.5rem;
+    right: -320px;
+    opacity: 1;
+
+   
+}
+.radio-group input[type="radio"] {
+    width: 50px;
+    height: 20px;
+    padding-top: 2px;
+}
+
+.radio h2{
+    font-size: xx-large;
+    font-family: mv boli;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #ffffff;
+}
+
+.radio label{
+    font-size: larger;
+    font-weight: bold;
+}
+
+.place button{
+    width: 10rem;
+  
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background: #C27F85;
+    padding: 8px 10px;
+    font-size: 20px;
+    font-weight: bold;
+    transition: 0.3s;
+    border-radius: 10rem;
+    position: relative;
+    left: 54rem;
+    top: -54rem;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.place button:hover {
+    color: black;
+}
+

@@ -1,0 +1,51 @@
+[
+    {
+        "id": 1,
+        "name":"Strawberry Icebox Cake",
+        "price": 200,
+        "image": "image/icebox.jpg"
+    },
+    {
+        "id": 2,
+        "name":"Choco Strawberry Cake",
+        "price": 250,
+        "image": "image/chocos.jpg"
+    },
+    {
+        "id": 3,
+        "name":"Strawberry Pound Cake",
+        "price": 290,
+        "image": "image/pound.jpg"
+    },
+    {
+        "id": 4,
+        "name":"Strawberry Short Cake",
+        "price": 200,
+        "image": "image/short.jpg"
+    },
+    {
+        "id": 5,
+        "name":"Strawberry Jello Cake",
+        "price": 300,
+        "image": "image/cake2.jpg"
+    },
+    {
+        "id": 6,
+        "name":"Japanese Strawberry Cake",
+        "price": 200,
+        "image": "image/japan.jpg"
+    },
+    {
+        "id": 7,
+        "name":"Strawberry Mouse Cake",
+        "price": 200,
+        "image": "image/mousse.jpg"
+    },
+    {
+        "id": 8,
+        "name":"Strawberry Crunch Cake",
+        "price": 200,
+        "image": "image/crunch.jpg"
+    }
+
+]
